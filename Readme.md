@@ -16,4 +16,8 @@ or
 
 Run:
 
-    show _example_
+    show *example*
+
+F.e.
+
+    show attributes
