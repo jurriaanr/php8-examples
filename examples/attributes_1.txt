@@ -1,2 +1,1 @@
-Attributes, commonly known as annotations in other languages, offers a way to add meta data to classes, without having to parse docblocks.
-PHP itself does NOT attach any meaning to any atribute. 
+Attributes on class level

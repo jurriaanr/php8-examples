@@ -12,15 +12,21 @@ use JetBrains\PhpStorm\Immutable;
 #[Oberon\Whatever\MyAnnotation]
 // although it will use the imported namespaces
 #[Immutable]
-class Foo {
-    // apparently you still cant set a type on a constant??
-    const BAR = 'BAR';
-
-    public function getClassAttributes(): void {
+class Foo
+{
+    public function getClassAttributes(): array
+    {
         $refl = new ReflectionClass($this);
-        var_dump(array_map(fn($a) => ['name' => $a->getName(), 'params' => $a->getArguments()], $refl->getAttributes()));
+
+        return array_map(
+            fn($a) => [
+                'name' => $a->getName(),
+                'params' => $a->getArguments(),
+            ],
+            $refl->getAttributes()
+        );
     }
 }
 
 $foo = new Foo();
-$foo->getClassAttributes();
+var_dump($foo->getClassAttributes());
