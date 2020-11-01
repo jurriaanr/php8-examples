@@ -2,6 +2,7 @@
 
 SCRIPT=${1:-"nullsafe"}
 
+clear
 printf "\n\n======== ${SCRIPT^} Description =========\n\n"
 cat /app/examples/$SCRIPT.txt
 
