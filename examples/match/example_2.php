@@ -8,5 +8,5 @@ echo match (true) {
     $status >= 300 && $status < 400  => 'Redirection',
     $status >= 400 && $status < 500  => 'Client error',
     $status >= 500 && $status < 600  => 'Server error',
-    default => throw new \Exception('Not a valid status'),
+    default => throw new \Exception('Not a valid status'), // default option & throw as an expression!
 };

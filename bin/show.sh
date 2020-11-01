@@ -1,16 +1,17 @@
 #!/bin/bash
 
-SCRIPT=${1:-"nullsafe"}
+EXAMPLE=${1:-"nullsafe"}
+
 
 reset
-printf "\n\n======== ${SCRIPT^} Description =========\n\n"
+printf "\n\n======== ${EXAMPLE^} Description =========\n\n"
 
-DESCRIPTION=$(<"/app/examples/$SCRIPT.txt")
+DESCRIPTION=$(<"/app/examples/$EXAMPLE/description.txt")
 echo -e "\e[104m$DESCRIPTION\033[0m"
 printf "\n==========================================\n\n"
 
 for i in {1..9}; do
-  FILENAME="${SCRIPT}_${i}"
+  FILENAME="${EXAMPLE}/example_${i}"
   if test -f "/app/examples/$FILENAME.php"; then
     printf "EXAMPLE $i"
     printf "\n\n----- description -------\n\n"
