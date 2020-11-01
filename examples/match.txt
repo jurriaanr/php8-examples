@@ -1,0 +1,1 @@
+It's the stricter and more modern version of switch: match can return values, doesn't require break statements, can combine conditions, uses strict type comparisons and doesn't do any type coercion.
