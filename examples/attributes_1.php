@@ -18,30 +18,9 @@ class Foo {
 
     public function getClassAttributes(): void {
         $refl = new ReflectionClass($this);
-        $this->showAttributes($refl->getAttributes());
-    }
-
-    #[AnotherExample]
-    #[AnotherExample(self::BAR)]
-    public function getMethodAttributes(): void {
-        $refl = new ReflectionClass($this);
-        $this->showAttributes($refl->getMethod('getMethodAttributes')->getAttributes());
-    }
-
-        
-    public function getParametersAttributes(#[ParamExample] string $name = ''): void {
-        $refl = new ReflectionClass($this);
-        $this->showAttributes($refl->getMethod('getParametersAttributes')->getParameters()[0]->getAttributes());
-    }
-
-    private function showAttributes($atributes): void {
-        var_dump(array_map(fn($a) => ['name' => $a->getName(), 'params' => $a->getArguments()], $atributes));
+        var_dump(array_map(fn($a) => ['name' => $a->getName(), 'params' => $a->getArguments()], $refl->getAttributes()));
     }
 }
 
 $foo = new Foo();
 $foo->getClassAttributes();
-echo "=================\n\n";
-$foo->getMethodAttributes();
-echo "=================\n\n";
-$foo->getParametersAttributes();
