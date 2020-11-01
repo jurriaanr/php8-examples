@@ -1,8 +1,8 @@
 
 _show_options=''
 for entry in `ls /app/examples`; do
-  if [ ${entry: -4} == ".php" ];  then
-    _show_options="${_show_options}${entry:0:-4} "
+  if [ ${entry: -6} == "_1.php" ];  then
+    _show_options="${_show_options}${entry:0:-6} "
   fi
 done
 complete -W "${_show_options}" 'show'
