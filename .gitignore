@@ -1,0 +1,8 @@
+/vendor/
+/bin/vendor/
+/.idea
+/docker-compose.override.yml
+
+.env
+.env.test
+

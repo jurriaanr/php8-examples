@@ -1,0 +1,10 @@
+version: '3.1'
+services:
+  php:
+    image: php8-test:1.0
+    container_name: php-8-test
+    restart: "no"
+    volumes:
+      - .:/app/:delegated
+      - ./bin/show.sh:/usr/local/bin/show:ro
+    
