@@ -1,0 +1,2 @@
+Inheritance checks are not performed on private methods anymore. Previously, PHP used to apply the same inheritance checks on public, protected and private methods.
+This didn't make sense, since private methods won't be accessible by child classes.

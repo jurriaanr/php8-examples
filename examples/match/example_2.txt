@@ -1,1 +1,1 @@
-Trick do more expressive tests
+Trick to do more expressive tests, check for true

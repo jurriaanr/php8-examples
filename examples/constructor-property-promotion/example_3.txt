@@ -1,0 +1,1 @@
+Mixing and matching is possible, but a property can't both be defined on class level and in the constructor.

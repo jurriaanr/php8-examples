@@ -1,1 +1,1 @@
-multiple match values (there is no fallthrough)
+Combining multiple match values is possbile (but there is no fallthrough like with switch)

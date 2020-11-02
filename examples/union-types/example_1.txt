@@ -1,1 +1,1 @@
-Function which can be called with 2 different types can now still be typed in PHP8
+Accept either DateTime or DateTimeImmutable. Return either type (Still no generics, can't relate input and output)

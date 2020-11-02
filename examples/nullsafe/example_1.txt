@@ -1,1 +1,1 @@
- Call a method or fetch a property on the result of an expression if it is not null
+Calling getDate without ever setting the date property

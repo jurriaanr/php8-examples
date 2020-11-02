@@ -1,0 +1,1 @@
+While it was already possible to return self, static wasn't a valid return type until PHP 8. Given PHP's dynamically typed nature, it's a feature that will be useful to many developers.

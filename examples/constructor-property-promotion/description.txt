@@ -1,0 +1,1 @@
+Create value objects or data transfer objects. Instead of specifying class properties and a constructor for them, PHP can now combine them into one.

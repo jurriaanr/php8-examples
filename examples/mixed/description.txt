@@ -1,0 +1,1 @@
+An explicit mixed type would allow people to add types to parameters, class properties and function returns to indicate that the type information wasn't forgotten about, it just can't be specified more precisely, or the programmer explicitly decided not to do so.

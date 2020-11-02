@@ -1,0 +1,1 @@
+Match uses strict type checking

@@ -1,0 +1,1 @@
+Must be either of type array, bool, callable, int, float, null, object, resource, string

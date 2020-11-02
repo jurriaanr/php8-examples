@@ -1,0 +1,1 @@
+The possible types include null, which means the variable itself can't be nullable

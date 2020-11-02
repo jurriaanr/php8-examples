@@ -1,1 +1,1 @@
-Function which can be called with 2 different types can now still be typed in PHP8
+Methods which can be called with 2 different types can now be typed in PHP8. Also multiple return values is now possible

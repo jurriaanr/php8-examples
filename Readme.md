@@ -21,3 +21,5 @@ Run:
 F.e.
 
     show attributes
+
+The show command has autocompletion on the names of the example. If you add new example folders, you need to login again on the console for the contrainer and these will be loaded. 

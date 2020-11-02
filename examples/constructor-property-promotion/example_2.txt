@@ -1,0 +1,1 @@
+Private properties is also possible
