@@ -1,0 +1,1 @@
+A small, yet useful, new feature: it's now possible to use ::class on objects

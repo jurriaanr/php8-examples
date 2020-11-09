@@ -1,0 +1,5 @@
+Built upon the weakrefs RFC that was added in PHP 7.4, a WeakMap implementation is added in PHP 8. WeakMap holds references to objects, which don't prevent those objects from being garbage collected.
+
+Take the example of ORMs, they often implement caches which hold references to entity classes to improve the performance of relations between entities. These entity objects can not be garbage collected, as long as this cache has a reference to them, even if the cache is the only thing referencing them.
+
+If this caching layer uses weak references and maps instead, PHP will garbage collect these objects when nothing else references them anymore. Especially in the case of ORMs, which can manage several hundreds, if not thousands of entities within a request; weak maps can offer a better, more resource friendly way of dealing with these objects.

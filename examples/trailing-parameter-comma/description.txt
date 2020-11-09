@@ -1,0 +1,1 @@
+Trailing comma support was still lacking in parameter lists. It's now allowed in PHP 8.

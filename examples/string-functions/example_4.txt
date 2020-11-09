@@ -1,0 +1,1 @@
+str_starts_with and str_ends_with do what you think they will do.

@@ -1,0 +1,1 @@
+Catch exception without doing anything with the variable.

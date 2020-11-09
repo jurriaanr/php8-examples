@@ -1,0 +1,1 @@
+str_contains: A replacement for strpos and in a way also strstr and stristr.

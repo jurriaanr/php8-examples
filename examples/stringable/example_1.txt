@@ -1,0 +1,1 @@
+class Foo implements __toString and so is automatically 'Stringable'

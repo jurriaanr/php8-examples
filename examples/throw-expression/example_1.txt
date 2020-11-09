@@ -1,1 +1,1 @@
-It is possible to throw inside an expression like within a null coalesce operator, or a function shorthand
+It is possible to throw inside an expression like within a null coalesce operator, or a function shorthand.

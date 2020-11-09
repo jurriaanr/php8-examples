@@ -1,0 +1,1 @@
+The Stringable interface can be used to type hint anything that implements __toString(). Whenever a class implements __toString(), it automatically implements the interface behind the scenes and there's no need to manually implement it.

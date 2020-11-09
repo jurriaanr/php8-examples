@@ -1,1 +1,1 @@
-throw Was a statement, but in PHP8 it is an expression, which makes it possible to throw exception in many new places
+'throw' was a statement, but in PHP8 it is an expression, which makes it possible to throw exception in many new places

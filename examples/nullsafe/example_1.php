@@ -20,4 +20,3 @@ $foo = new Foo();
 echo ($foo->getDate()?->format('Y-m-d') ?? 'No date') . "\n";
 // this will be a fatal error
 echo ($foo->getDate()->format('Y-m-d') ?? 'No date') . "\n";
-
