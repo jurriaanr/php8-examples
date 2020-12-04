@@ -1,4 +1,4 @@
-FROM php:8.0-rc
+FROM php:8.0.0
 
 USER root
 RUN apt-get update && apt-get install -y \

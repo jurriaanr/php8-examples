@@ -4,8 +4,8 @@ use JetBrains\PhpStorm\Immutable;
 
 // attributes only accept constant expressions as input arguments
 #[ExampleAttribute("hello")]
-// You can't use named params though! So @Route(path="/xx") wont be #[Route(path="/xx")] but #[Route("", "", "/xx")]
-#[ExampleAttribute(DateTime::class)]
+// You can also use named params. So @Route(path="/xx") will work
+#[ExampleAttribute(DateTime::class, name: "SomeName")]
 // calculate
 #[ExampleAttribute(1+1)]
 // there is no namespace checking

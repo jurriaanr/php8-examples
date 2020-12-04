@@ -1,3 +1,7 @@
+Make sure show is executable
+
+    chmod +x bin/show.sh
+
 Build the image
 
     docker build --tag php8-test:1.0 .
